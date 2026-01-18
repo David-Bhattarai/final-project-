@@ -1,0 +1,8 @@
+{
+  "name": "MindCare AI",
+  "description": "An advanced mental health platform featuring AI therapy, real-time emotion detection, stress relief tools, and professional support integration.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
