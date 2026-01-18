@@ -30,5 +30,21 @@ The chatbot uses **Natural Language Processing (NLP)**:
 
 If the similarity score is above **0.3**, Pandora uses the local dataset. Otherwise, it delegates the reasoning to Gemini AI.
 
+## 🗃️ Database
+The application uses **SQLite** to store mood logs.
+
+*   **Database file**: `mindcare.db`
+*   **Table**: `mood_logs`
+    *   `id`: Primary Key
+    *   `user_id`: User identifier
+    *   `score`: Mood score
+    *   `label`: Mood label
+    *   `timestamp`: Date and time of the log
+
+### API Endpoint: `/api/mood`
+*   **POST**: Saves a new mood log.
+    *   **Body**: `{ "user_id": "user_id", "score": 5, "label": "Happy" }`
+*   **GET**: Retrieves the last 7 mood logs.
+
 ---
 © 2024 MindCare AI Team
